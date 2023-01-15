@@ -1,24 +1,23 @@
-/* Google Font Link */
+/*================================
+         Google Font Link
+================================= */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@500;800&display=swap');
-
-/* Common Parts */
 * {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* -------------------------- */
+
 
 /*------------------------------
-     Header Sections Styles     
+     Header Styles     
 --------------------------------*/
 header {
-    background-color: rgba(255, 144, 14, 0.1);
+    background-color: rgba(35, 117, 232, 0.1);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 15px 80px;
 }
 
@@ -77,8 +76,10 @@ nav>ul {
     padding-bottom: 30px;
 }
 
-/* Main Part-1 Styles */
-.part-1 {
+/*====================================
+        quick section Styles
+===================================== */
+.quick-section {
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -105,18 +106,18 @@ nav>ul {
     justify-content: center;
 }
 
-.part-1-description {
+.quick-description {
     text-align: left;
     width: 80%;
     color: #727272;
 }
 
-.part-1img {
+.quick-img {
     height: 100%;
     width: 100%;
 }
 
-.part-1-title {
+.quick-title {
     font-size: 36px;
     margin-bottom: 10px;
     color: #727272;
@@ -130,8 +131,10 @@ nav>ul {
     color: #FF900E;
 }
 
-/* Part-2 Style */
-.part-2{
+/*==============================
+      features section Style 
+=================================*/
+.features-section{
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -140,14 +143,14 @@ nav>ul {
     align-items: center;
     justify-content: center;
 }
-.part-2-1 , .part-2-2{
+.features , .features-image{
     width: 50%;
 }
-.part-2-img{
+.features-img{
     width: 100%;
 }
 
-.part-2-title{
+.features-title{
     font-size: 38px;
     color: #131313;
     border-left:3px solid #FF900E;
@@ -155,12 +158,12 @@ nav>ul {
     margin-bottom: 15px;
    
 }
-.part-2-description{
+.features-description{
     font-size:16px ;
     color: #727272;
     margin-bottom: 15px;
 }
-.part-2-items{
+.features-items{
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -202,21 +205,25 @@ a{
     font-size: 20px;
 }
 
-/* Part-3 Styles */
-.part-3{
+/*=====================================
+          fact section Styles 
+=======================================*/
+.fact-section{
     width: 90%;
     margin: 0 auto;
 }
-.part-3-title{
+.fact-section-title{
     color: #131313;
-    font-size: 36px;
     font-weight: 700;
+    font-size: 45px;
 }
-.part-3-description{
+.fact-section-description{
     color: #727272;
+    font-weight: 400;
     font-size: 16px;
+    margin-bottom: 80px;
 }
-.cards{
+.facts{
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -225,22 +232,22 @@ a{
    margin-left: 160px;
    margin-bottom: 30px;
 }
-.card{
+.fact{
     width: 22%;
     border: 1px solid #FF900E;
    border-radius: 8px;
    padding-top: 10px;
    padding-bottom: 10px;
 }
-.card-1:hover , .card-3:hover{
-    transform: rotate(-30deg);
-    background-color: palegoldenrod;
+.fact-1:hover , .fact-3:hover{
+    transform: rotate(-45deg);
+    background-color: pink;
 }
-.card-2:hover , .card-4:hover{
-    transform: rotate(30deg);
-    background-color:lightblue;
+.fact-2:hover , .fact-4:hover{
+    transform: rotate(-45deg);
+    background-color:lightgreen;
 }
-.card-eliment{
+.fact-eliment{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,21 +255,23 @@ a{
     margin: 20px;
 
 }
-.card-icon{
+.fact-icon{
     margin-bottom: 0;
 }
-.card-number{
+.fact-number{
     font-size: 36px;
     color: #424242;
     margin-bottom: 0;
 }
-.card-text{
+.fact-text{
     font-size: 16px;
     color: #727272;
 }
 
-/* Sponsor Part */
-.sponsor-part{
+/* --------------------
+    Sponsor section 
+----------------------*/
+.sponsor-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,13 +279,19 @@ a{
 }
 .sponsor-title{
     color: #131313;
-    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 45px;
 }
 .sponsor-text{
-    margin-bottom: 40px;
-    width: 40%;
+    color: #727272;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    width: 542px;
+    height: 52px;
+    line-height: 26px;
     text-align: center;
 }
 .sponsor-images{
@@ -291,77 +306,63 @@ a{
   filter: grayscale(100%);
 }
 
-/* Extra Section */
-.extra-part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.extra-cards{
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-    width: 50%;
-    margin-bottom: 30px;
-}
-.free , .paid {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px;
-    border-radius: 5px;
-    align-items: center;
-}
-.free{
-    background-color: rgb(188, 215, 231);
-}
-.paid{
-    background-color: bisque;
-}
-.extra-title{
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-.extra-description , .extra-card-text{
-    color:#131313;
+/* =====================
+      Extra Section
+======================== */
+
+.about {
     text-align: center;
-    font-size: 18px;
-    font-weight: 500;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 130px 150px;
+     background: #FFF8F3;
+  }
+  /* ========================
+          about section
+ ============================*/
+
+.section-title{
+
+margin-bottom: 30px;
+font-weight: 700;
+font-size: 35px;
+text-align: center;
 }
-.extra-card-title{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.extra-card-text {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-.extra-card-list{
-   color: #424242;
-}
-.extra-button{
-    color: white;
-    background-color: #FF900E;
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-}
-.extra-icon1{
-    width: 20%;
-    margin-bottom: 10px;
-}
-.extra-icon2{
-    width: 23%;
-    margin-bottom: 0;
+.section-description{
+font-size: 18px;
+text-align: center;
+color: #757575;
+margin-bottom: 30px;
 }
 
-/* Footer Section */
+.about-info-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+
+}
+.about .info-title{
+font-size: 20px;
+color: #757575;
+}
+.info-descriptions{
+font-weight: 400;
+font-size: 18px;
+}
+
+.extra-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
 .footer-section{
     background-color: #FFF4E7;
     text-align: center;
     width: 95%;
     margin-left: 30px;
+    margin-top: 60px;
 }
 .footer-text{
     color: #424242;
@@ -370,11 +371,14 @@ a{
     padding-bottom: 15px;
 }
 
-/*------------------------------
---- Media Queries For Mobile ---
-------------------------------- */
+/*--------------- Media Query ---------------
+----------- Media Queries For Mobile --------
+------------------------------- ------------*/
+
 @media screen and (max-width:576px) {
-    /* Header Media Query */
+    /* ==========================
+        Header Media Query 
+    ============================*/
     .navbar {
       
         flex-direction: column;
@@ -413,8 +417,10 @@ a{
         width: 100%;
     }
 
-    /* Main Part-1 Media Query */
-    .part-1{
+    /* ==================================
+        quick Media Query 
+    ====================================*/
+    .quick-section{
         flex-direction: column;
     }
     .img-section{
@@ -432,28 +438,39 @@ a{
         text-align: center;
     }
 
-    /* Part 2 Style */
-    .part-2{
+    /* ============================
+         features section Style 
+ =====================================*/
+    .features-section{
         flex-direction: column;
         align-items:flex-start;
         width: 100%;
     }
-    .part-2-1 , .part-2-2{
+    .features, .features-image{
         width: 100%;
     }
 
-    /* Part 3 Styles */
-    .cards{
+    /* ==============================
+          fact section Styles 
+    =================================*/
+    .facts{
+        
         flex-direction: column;
         margin:0 auto;
     }
-    .card{
+    .fact{
         width: 100%;
     }
 
-    /* Sponsor Part */
+    /* ===========================
+           Sponsor section 
+    =============================*/
     .sponsor-text{
         width: 100%;
+    }
+    .sponsor-title{
+        font-size: 36px;
+
     }
     .sponsor-images{
         flex-direction: column;
@@ -463,17 +480,27 @@ a{
         width: 35%;
     }
 
-    /* Extra Part */
-    .extra-title{
-        text-align: center;
+    /*===========================
+            About us
+    =============================*/
+    .about-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
     }
-    .extra-cards{
+    .about{
+        display: flex;
         flex-direction: column;
-    }
-    .extra-card-title{
+        align-items: center;;
         text-align: center;
-    }
-    /* Footer Section */
+    
+        background: #FFF8F3;
+        border-radius: 10px;
+}
+
+    /*=======================
+            Footer Section
+    ==========================*/
    .footer-section{
     margin-left: 0;
     width: 100%;
